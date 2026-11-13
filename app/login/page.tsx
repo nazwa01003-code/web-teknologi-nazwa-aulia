@@ -25,8 +25,9 @@ export default function Page() {
                     src="/logo/uia-logo.png"
                     width={500}
                     height={360}
-                    className="block"
+                    className="block w-auto h-16 md:h-36 object-contain"
                     alt="Banner UIA"
+                    priority
                 />
             </div>
             <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20 m-auto mt-4">

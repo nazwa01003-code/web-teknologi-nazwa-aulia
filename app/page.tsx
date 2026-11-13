@@ -11,8 +11,9 @@ export default function Page() {
           src="/logo/uia-logo.png"
           width={500}
           height={360}
-          className="block"
+          className="block w-auto h-16 md:h-36 object-contain"
           alt="Banner UIA"
+          priority
         />
       </div>
 
@@ -35,7 +36,22 @@ export default function Page() {
         </div>
 
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          <Image
+            src="/hero-desktop.png"
+            width={1000}
+            height={760}
+            className="hidden md:block"
+            alt="Screenshots of the dashboard project showing desktop version"
+            priority
+          />
+          <Image
+            src="/hero-mobile.png"
+            width={560}
+            height={620}
+            className="block md:hidden"
+            alt="Screenshot of the dashboard project showing mobile version"
+            priority
+          />
         </div>
       </div>
     </main>

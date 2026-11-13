@@ -16,7 +16,7 @@ export default function SideNav() {
                         src="/logo/uia-logo.png"
                         width={300}
                         height={160}
-                        className="block"
+                        className="block w-auto h-auto object-contain"
                         alt="Banner UIA"
                     />
                 </div>
@@ -27,7 +27,7 @@ export default function SideNav() {
                 <form
                     action={async () => {
                         'use server';
-                        await signOut();
+                        await signOut({ redirectTo: '/login' });
                     }}
                 >
                     <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium text-gray-900 hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
